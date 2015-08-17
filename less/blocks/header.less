@@ -1,0 +1,76 @@
+//header
+
+.header {
+	width: 100%;
+}
+
+.logo {
+	height: @header-menu-height;
+	font-family: @font-base-bold;
+	font-size: @font-size-logo;
+	color: @base-color;
+	line-height: @header-menu-height;
+
+	a {
+		text-decoration: none;
+		color: @base-color;
+	}
+
+	span {
+		color: @base-color-darkest;
+		font-size: @font-size-logo;
+	}
+}
+
+.menu {
+	height: @header-menu-height;
+	line-height: @header-menu-height;
+
+	ul {
+		text-align: right;
+	}
+
+	li {
+		display: inline-block;
+		margin-right: 30px;
+		text-align: right;
+
+		&:last-of-type {
+			margin-right: 0;
+		}
+	}
+
+	a {
+		color: @gray-base;
+		font-size: @font-size-menu;
+		font-family: @font-base-bold;
+		//text-shadow: none;
+		transition: all 0.3s;
+		span {
+			color: @gray-base;
+			transition: all 0.3s;
+		}
+
+
+		&:hover, &:focus, &:active {
+			text-decoration: none;
+			color: @base-color-darken;
+
+			span {
+				color: @base-color;
+			}
+
+		}
+	}
+}
+
+.header-line {
+
+	height: @header-line-height;
+	background-color: @base-color;
+	.container {
+		background-color: #fff;
+		height: @header-line-height;
+	}
+}
+

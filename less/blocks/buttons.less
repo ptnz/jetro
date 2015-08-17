@@ -1,0 +1,28 @@
+.btn-wrapper {
+	width: 100%;
+	margin-top: 15px;
+}
+
+.btn {
+	padding: 8px 20px 4px 20px;
+	text-transform: uppercase;
+	border-radius: 0;
+	background-color: @base-color-darken;
+	color: #fff;
+	transition: all 0.3s;
+
+	&:hover, &:active, &:visited {
+		text-decoration: none;
+		color: #fff;
+		background-color: @base-color-darkest;
+	}
+
+	&--left {
+		text-align: left;
+	}
+
+	:hover {
+		background-color: @base-color-darkest;
+	}
+}
+

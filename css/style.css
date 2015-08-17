@@ -1,0 +1,190 @@
+/* Fonts */
+@import "../lib/fonts/bebasneue/bebasneue.css";
+@import "../lib/fonts/myriadpro/myriadpro.css";
+/* Variables */
+/* Elements */
+.btn-wrapper {
+  width: 100%;
+  margin-top: 15px;
+}
+.btn {
+  padding: 8px 20px 4px 20px;
+  text-transform: uppercase;
+  border-radius: 0;
+  background-color: #e8663c;
+  color: #fff;
+  -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+}
+.btn:hover,
+.btn:active,
+.btn:visited {
+  text-decoration: none;
+  color: #fff;
+  background-color: #d85936;
+}
+.btn--left {
+  text-align: left;
+}
+.btn :hover {
+  background-color: #d85936;
+}
+/* Blocks of pages */
+.header {
+  width: 100%;
+}
+.logo {
+  height: 80px;
+  font-family: "bebas_neuebold";
+  font-size: 48px;
+  color: #f3af9d;
+  line-height: 80px;
+}
+.logo a {
+  text-decoration: none;
+  color: #f3af9d;
+}
+.logo span {
+  color: #d85936;
+  font-size: 48px;
+}
+.menu {
+  height: 80px;
+  line-height: 80px;
+}
+.menu ul {
+  text-align: right;
+}
+.menu li {
+  display: inline-block;
+  margin-right: 30px;
+  text-align: right;
+}
+.menu li:last-of-type {
+  margin-right: 0;
+}
+.menu a {
+  color: #b9b9b9;
+  font-size: 22px;
+  font-family: "bebas_neuebold";
+  -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+}
+.menu a span {
+  color: #b9b9b9;
+  -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+}
+.menu a:hover,
+.menu a:focus,
+.menu a:active {
+  text-decoration: none;
+  color: #e8663c;
+}
+.menu a:hover span,
+.menu a:focus span,
+.menu a:active span {
+  color: #f3af9d;
+}
+.header-line {
+  height: 65px;
+  background-color: #f3af9d;
+}
+.header-line .container {
+  background-color: #fff;
+  height: 65px;
+}
+/* Pages */
+/* Slider */
+.slider {
+  margin-top: -65px;
+}
+.fotorama__caption__wrap {
+  z-index: 100;
+  color: #fff;
+  padding: 20px;
+  margin: 0 0 35px 35px;
+  background-color: rgba(232, 102, 60, 0.8);
+  min-width: 50%;
+  width: 50%;
+}
+.fotorama__caption__wrap a,
+.fotorama__caption__wrap a:hover,
+.fotorama__caption__wrap a:focus,
+.fotorama__caption__wrap a:active {
+  text-decoration: none;
+  color: #fff;
+}
+.fotorama__caption__wrap .h2 {
+  font-family: "bebas_neue_regularregular";
+  font-size: 26px;
+  padding: 0;
+  margin: 10px 0 20px 0;
+}
+.fotorama__caption__wrap p {
+  font-family: "MyriadPro-Regular";
+  font-size: 16px;
+}
+.fotorama__nav__shaft {
+  padding: 0 15px;
+  background-color: #fff;
+}
+.fotorama__thumb-border {
+  margin-top: 0 !important;
+  margin-left: 15px !important;
+  width: 61px !important;
+  height: 61px !important;
+}
+.fotorama__nav.fotorama__nav--thumbs {
+  background-color: #f3af9d;
+  margin-top: 15px;
+}
+.fotorama__nav__frame.fotorama__nav__frame--thumb {
+  padding-top: 0 !important;
+}
+/* Features */
+.features {
+  margin-top: 30px;
+}
+.feature-item__title {
+  color: #e8663c;
+  font-family: "bebas_neuebold";
+  font-size: 26px;
+  text-align: left;
+  position: relative;
+  padding: 0 40px 20px 75px;
+}
+.feature-item__title--portfolio:before {
+  content: '';
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  background: url(../pict/images/index/gear-icon.png) 0 0 no-repeat;
+}
+.feature-item__title--quality:before {
+  content: '';
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  background: url(../pict/images/index/checkmark-icon.png) 0 0 no-repeat;
+}
+.feature-item__title--follow:before {
+  content: '';
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  background: url(../pict/images/index/user-icon.png) 0 0 no-repeat;
+}
+.feature-item__text {
+  color: #414141;
+  font-family: "MyriadPro-Regular";
+  font-size: 16px;
+}
+
+/*# sourceMappingURL=style.css.map */
