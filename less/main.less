@@ -1,3 +1,7 @@
+body {
+	background: url(../pict/images/index/bgnd.png) 0 0 repeat;
+}
+
 /* Slider */
 .slider {
 	margin-top: -@header-line-height;
@@ -33,10 +37,9 @@
 
 .fotorama__nav__shaft {
 	padding: 0 15px;
-	background-color: #fff;
+	background: url(../pict/images/index/bgnd.png) 0 0 repeat;
 
 }
-
 
 .fotorama__thumb-border {
 	margin-top: 0 !important;
@@ -58,7 +61,7 @@
 
 /* Features */
 .features {
-margin-top: 30px;
+	margin-top: 30px;
 }
 
 .feature-item {
@@ -107,7 +110,6 @@ margin-top: 30px;
 			}
 		}
 
-
 	}
 
 	&__text {
@@ -115,4 +117,80 @@ margin-top: 30px;
 		font-family: @font-additional-regular;
 		font-size: @text-on-slide;
 	}
+}
+
+/* Recent works */
+.work-list {
+	margin-top: 40px;
+
+	&__title {
+		color: @base-color-darken;
+		font-family: @font-base-bold;
+		font-size: @title-on-slide;
+		text-align: left;
+		background: url(../pict/images/index/title-strip.png) 0 0 no-repeat;
+		background-size: contain;
+		text-transform: uppercase;
+		padding-bottom: 15px;
+
+		span {
+			background: url(../pict/images/index/bgnd.png) 0 0 repeat;
+			background-size: cover;
+			padding-right: 25px;
+		}
+	}
+}
+
+.work {
+
+	&__img {
+
+		position: relative;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	a {
+		display: block;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: rgba(0,0,0,0) url(../pict/images/index/work-hower-pict.png) 50% 50% no-repeat;
+		background-size: 0;
+
+		transition: all 0.3s;
+		&:hover {
+			background: rgba(0,0,0,0.7) url(../pict/images/index/work-hower-pict.png) 50% 50% no-repeat;
+			background-size: auto;
+
+		}
+
+	}
+
+
+
+	&__description {
+		padding: 10px 15px;
+		font-family: @font-base-bold;
+		border: 1px solid @gray-base;
+		border-top: none;
+
+		&__title {
+			color: @gray-base;
+			text-transform: uppercase;
+			font-size: @font-size-menu;
+		}
+
+		&__date {
+			color: @base-color-darken;
+			font-size: @text-on-slide;
+			line-height: @text-on-slide;
+			margin-bottom: 0;
+		}
+	}
+
 }

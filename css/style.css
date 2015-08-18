@@ -18,10 +18,12 @@
 }
 .btn:hover,
 .btn:active,
-.btn:visited {
+.btn:visited,
+.btn:focus {
   text-decoration: none;
   color: #fff;
   background-color: #d85936;
+  box-shadow: none;
 }
 .btn--left {
   text-align: left;
@@ -65,7 +67,7 @@
 }
 .menu a {
   color: #b9b9b9;
-  font-size: 22px;
+  font-size: 24px;
   font-family: "bebas_neuebold";
   -webkit-transition: all 0.3s;
           transition: all 0.3s;
@@ -91,10 +93,13 @@
   background-color: #f3af9d;
 }
 .header-line .container {
-  background-color: #fff;
+  background: url(../pict/images/index/bgnd.png) 0 0 repeat;
   height: 65px;
 }
 /* Pages */
+body {
+  background: url(../pict/images/index/bgnd.png) 0 0 repeat;
+}
 /* Slider */
 .slider {
   margin-top: -65px;
@@ -117,7 +122,7 @@
 }
 .fotorama__caption__wrap .h2 {
   font-family: "bebas_neue_regularregular";
-  font-size: 26px;
+  font-size: 28px;
   padding: 0;
   margin: 10px 0 20px 0;
 }
@@ -127,7 +132,7 @@
 }
 .fotorama__nav__shaft {
   padding: 0 15px;
-  background-color: #fff;
+  background: url(../pict/images/index/bgnd.png) 0 0 repeat;
 }
 .fotorama__thumb-border {
   margin-top: 0 !important;
@@ -149,7 +154,7 @@
 .feature-item__title {
   color: #e8663c;
   font-family: "bebas_neuebold";
-  font-size: 26px;
+  font-size: 28px;
   text-align: left;
   position: relative;
   padding: 0 40px 20px 75px;
@@ -185,6 +190,64 @@
   color: #414141;
   font-family: "MyriadPro-Regular";
   font-size: 16px;
+}
+/* Recent works */
+.work-list {
+  margin-top: 40px;
+}
+.work-list__title {
+  color: #e8663c;
+  font-family: "bebas_neuebold";
+  font-size: 28px;
+  text-align: left;
+  background: url(../pict/images/index/title-strip.png) 0 0 no-repeat;
+  background-size: contain;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+}
+.work-list__title span {
+  background: url(../pict/images/index/bgnd.png) 0 0 repeat;
+  background-size: cover;
+  padding-right: 25px;
+}
+.work__img {
+  position: relative;
+}
+.work__img img {
+  width: 100%;
+}
+.work a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0) url(../pict/images/index/work-hower-pict.png) 50% 50% no-repeat;
+  background-size: 0;
+  -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+}
+.work a:hover {
+  background: rgba(0, 0, 0, 0.7) url(../pict/images/index/work-hower-pict.png) 50% 50% no-repeat;
+  background-size: auto;
+}
+.work__description {
+  padding: 10px 15px;
+  font-family: "bebas_neuebold";
+  border: 1px solid #b9b9b9;
+  border-top: none;
+}
+.work__description__title {
+  color: #b9b9b9;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+.work__description__date {
+  color: #e8663c;
+  font-size: 16px;
+  line-height: 16px;
+  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
