@@ -210,11 +210,16 @@ body {
   background-size: cover;
   padding-right: 25px;
 }
+.work {
+  margin-bottom: 35px;
+}
 .work__img {
   position: relative;
+  overflow: hidden;
+  max-height: 200px;
 }
 .work__img img {
-  width: 100%;
+  min-width: 100%;
 }
 .work a {
   display: block;
