@@ -68,9 +68,31 @@
 
 	height: @header-line-height;
 	background-color: @base-color;
+
+	margin-bottom: 20px;
+
 	.container {
 		background: url(../pict/images/index/bgnd.png) 0 0 repeat;
 		height: @header-line-height;
 	}
+
+	.row {
+		background-color: @base-color-darken;
+		margin: 0 !important;
+	}
+	&__title-wrapper {
+		height: @header-line-height;
+		padding-left: 20px;
+	}
+	
+	&__title {
+		text-transform: uppercase;
+		font-size: @h1-title;
+		font-family: @font-base-bold;
+		line-height: @h1-title;
+		color: #fff;
+	}
+
+
 }
 

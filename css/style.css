@@ -3,6 +3,57 @@
 @import "../lib/fonts/myriadpro/myriadpro.css";
 /* Variables */
 /* Elements */
+.content p {
+  font-family: "MyriadPro-Regular";
+  font-size: 16px;
+  margin-bottom: 25px;
+  color: #414141;
+}
+.content .big-letter {
+  color: #e8663c;
+  font-family: "MyriadPro-Bold";
+  font-size: 41px;
+  display: inline-block;
+  line-height: 35px;
+  float: left;
+  padding-right: 10px;
+  margin-top: 6px;
+}
+.content .annotation {
+  font-family: "MyriadPro-It";
+  display: inline-block;
+  margin-left: 80px;
+  padding-left: 15px;
+  border-left: 10px solid #e8663c;
+  font-style: italic;
+}
+.content .notice-text {
+  font-family: "MyriadPro-It";
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding: 25px 0;
+}
+.content .notice-text--confirmation {
+  border: 1px solid #98c601;
+  background-color: rgba(152, 198, 1, 0.2);
+  color: #98c601;
+}
+.content .notice-text--error {
+  border: 1px solid #eb5439;
+  background-color: rgba(235, 84, 57, 0.2);
+  color: #eb5439;
+}
+.content .notice-text--alert {
+  border: 1px solid #fab418;
+  background-color: rgba(250, 180, 24, 0.2);
+  color: #fab418;
+}
+.content .notice-text--information {
+  border: 1px solid #4d8fcb;
+  background-color: rgba(77, 143, 203, 0.2);
+  color: #4d8fcb;
+}
 .btn-wrapper {
   width: 100%;
   margin-top: 15px;
@@ -70,6 +121,61 @@
 .social-block__btn--vim:hover {
   background-position: -142px -36px;
 }
+.img-to-left {
+  display: inline-block;
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+.img-container {
+  margin-top: 25px;
+}
+/* Slider */
+.slider {
+  margin-top: -85px;
+}
+.fotorama__caption__wrap {
+  z-index: 100;
+  color: #fff;
+  padding: 20px;
+  margin: 0 0 35px 35px;
+  background-color: rgba(232, 102, 60, 0.8);
+  min-width: 50%;
+  width: 50%;
+}
+.fotorama__caption__wrap a,
+.fotorama__caption__wrap a:hover,
+.fotorama__caption__wrap a:focus,
+.fotorama__caption__wrap a:active {
+  text-decoration: none;
+  color: #fff;
+}
+.fotorama__caption__wrap .h2 {
+  font-family: "bebas_neue_regularregular";
+  font-size: 28px;
+  padding: 0;
+  margin: 10px 0 20px 0;
+}
+.fotorama__caption__wrap p {
+  font-family: "MyriadPro-Regular";
+  font-size: 16px;
+}
+.fotorama__nav__shaft {
+  padding: 0 15px;
+  background: url(../pict/images/index/bgnd.png) 0 0 repeat;
+}
+.fotorama__thumb-border {
+  margin-top: 0 !important;
+  margin-left: 15px !important;
+  width: 61px !important;
+  height: 61px !important;
+}
+.fotorama__nav.fotorama__nav--thumbs {
+  background-color: #f3af9d;
+  margin-top: 15px;
+}
+.fotorama__nav__frame.fotorama__nav__frame--thumb {
+  padding-top: 0 !important;
+}
 /* Blocks of pages */
 .header {
   width: 100%;
@@ -130,26 +236,37 @@
 .header-line {
   height: 65px;
   background-color: #f3af9d;
+  margin-bottom: 20px;
 }
 .header-line .container {
   background: url(../pict/images/index/bgnd.png) 0 0 repeat;
   height: 65px;
 }
+.header-line .row {
+  background-color: #e8663c;
+  margin: 0 !important;
+}
+.header-line__title-wrapper {
+  height: 65px;
+  padding-left: 20px;
+}
+.header-line__title {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: "bebas_neuebold";
+  line-height: 30px;
+  color: #fff;
+}
 .footer {
   width: 100%;
   background-color: #f3b29d;
-  min-height: 275px;
-  /*TODO temp*/
 }
 .footer .container {
   background: url(../pict/images/index/bgnd.png) 0 0 repeat;
-  min-height: 275px;
-  /*TODO temp*/
 }
 .footer .container .row {
   background-color: #e8663c;
   min-height: 275px;
-  /*TODO temp*/
   margin: 0 !important;
 }
 .footer-column {
@@ -177,53 +294,6 @@
 /* Pages */
 body {
   background: url(../pict/images/index/bgnd.png) 0 0 repeat;
-}
-/* Slider */
-.slider {
-  margin-top: -65px;
-}
-.fotorama__caption__wrap {
-  z-index: 100;
-  color: #fff;
-  padding: 20px;
-  margin: 0 0 35px 35px;
-  background-color: rgba(232, 102, 60, 0.8);
-  min-width: 50%;
-  width: 50%;
-}
-.fotorama__caption__wrap a,
-.fotorama__caption__wrap a:hover,
-.fotorama__caption__wrap a:focus,
-.fotorama__caption__wrap a:active {
-  text-decoration: none;
-  color: #fff;
-}
-.fotorama__caption__wrap .h2 {
-  font-family: "bebas_neue_regularregular";
-  font-size: 28px;
-  padding: 0;
-  margin: 10px 0 20px 0;
-}
-.fotorama__caption__wrap p {
-  font-family: "MyriadPro-Regular";
-  font-size: 16px;
-}
-.fotorama__nav__shaft {
-  padding: 0 15px;
-  background: url(../pict/images/index/bgnd.png) 0 0 repeat;
-}
-.fotorama__thumb-border {
-  margin-top: 0 !important;
-  margin-left: 15px !important;
-  width: 61px !important;
-  height: 61px !important;
-}
-.fotorama__nav.fotorama__nav--thumbs {
-  background-color: #f3af9d;
-  margin-top: 15px;
-}
-.fotorama__nav__frame.fotorama__nav__frame--thumb {
-  padding-top: 0 !important;
 }
 /* Features */
 .features {
