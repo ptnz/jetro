@@ -21,9 +21,61 @@
 	&--left {
 		text-align: left;
 	}
+}
 
-	:hover {
-		background-color: @base-color-darkest;
+/* Social */
+
+.social-block {
+	display: inline-block;
+
+	&__btn {
+		width: 34px;
+		height: 34px;
+		display: block;
+		float: left;
+		padding: 0;
+		margin-right: 5px;
+
+		&--fb {
+			background:  url(../pict/images/sprite/social-sprite.png) 0 0 no-repeat;
+
+			&:hover {
+				background-position: 0px -36px;
+			}
+			
+		}
+
+		&--tw {
+			background:  url(../pict/images/sprite/social-sprite.png) -36px 0 no-repeat;
+
+			&:hover {
+				background-position: -36px -36px;
+			}
+		}
+
+		&--mail {
+			background:  url(../pict/images/sprite/social-sprite.png) -72px 0 no-repeat;
+
+			&:hover {
+				background-position: -72px -36px;
+			}
+		}
+
+		&--rss {
+			background:  url(../pict/images/sprite/social-sprite.png) -105px 0 no-repeat;
+
+			&:hover {
+				background-position: -105px -36px;
+			}
+		}
+
+		&--vim {
+			background:  url(../pict/images/sprite/social-sprite.png) -142px 0 no-repeat;
+
+			&:hover {
+				background-position: -142px -36px;
+			}
+		}
 	}
 }
 

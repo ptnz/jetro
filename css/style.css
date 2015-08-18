@@ -28,8 +28,47 @@
 .btn--left {
   text-align: left;
 }
-.btn :hover {
-  background-color: #d85936;
+/* Social */
+.social-block {
+  display: inline-block;
+}
+.social-block__btn {
+  width: 34px;
+  height: 34px;
+  display: block;
+  float: left;
+  padding: 0;
+  margin-right: 5px;
+}
+.social-block__btn--fb {
+  background: url(../pict/images/sprite/social-sprite.png) 0 0 no-repeat;
+}
+.social-block__btn--fb:hover {
+  background-position: 0px -36px;
+}
+.social-block__btn--tw {
+  background: url(../pict/images/sprite/social-sprite.png) -36px 0 no-repeat;
+}
+.social-block__btn--tw:hover {
+  background-position: -36px -36px;
+}
+.social-block__btn--mail {
+  background: url(../pict/images/sprite/social-sprite.png) -72px 0 no-repeat;
+}
+.social-block__btn--mail:hover {
+  background-position: -72px -36px;
+}
+.social-block__btn--rss {
+  background: url(../pict/images/sprite/social-sprite.png) -105px 0 no-repeat;
+}
+.social-block__btn--rss:hover {
+  background-position: -105px -36px;
+}
+.social-block__btn--vim {
+  background: url(../pict/images/sprite/social-sprite.png) -142px 0 no-repeat;
+}
+.social-block__btn--vim:hover {
+  background-position: -142px -36px;
 }
 /* Blocks of pages */
 .header {
@@ -96,6 +135,45 @@
   background: url(../pict/images/index/bgnd.png) 0 0 repeat;
   height: 65px;
 }
+.footer {
+  width: 100%;
+  background-color: #f3b29d;
+  min-height: 275px;
+  /*TODO temp*/
+}
+.footer .container {
+  background: url(../pict/images/index/bgnd.png) 0 0 repeat;
+  min-height: 275px;
+  /*TODO temp*/
+}
+.footer .container .row {
+  background-color: #e8663c;
+  min-height: 275px;
+  /*TODO temp*/
+  margin: 0 !important;
+}
+.footer-column {
+  color: #fff;
+  padding: 40px;
+}
+.footer-column__title {
+  text-transform: uppercase;
+  font-family: "bebas_neue_regularregular";
+  font-size: 24px;
+  padding-bottom: 30px;
+}
+.footer-column__text {
+  font-family: "MyriadPro-Regular";
+  font-size: 12px;
+}
+.footer-column a {
+  color: #f3b29d;
+  text-decoration: none;
+}
+.footer-column a:hover {
+  color: #b9b9b9;
+  text-decoration: underline;
+}
 /* Pages */
 body {
   background: url(../pict/images/index/bgnd.png) 0 0 repeat;
@@ -150,6 +228,9 @@ body {
 /* Features */
 .features {
   margin-top: 30px;
+}
+.feature-item {
+  margin-bottom: 20px;
 }
 .feature-item__title {
   color: #e8663c;
