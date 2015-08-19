@@ -89,15 +89,23 @@ body {
 
 	margin-bottom: 35px;
 
+	&__img-inner {
+		position: relative;
+		padding-top: 100%;
+	}
+
 	&__img {
 
-		position: relative;
+		position: absolute;
 		overflow: hidden;
-		max-height: 200px;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
 
 		img {
 			min-width: 100%;
-			//width: 135%;
+			min-height: 100%;
 		}
 	}
 
@@ -111,7 +119,7 @@ body {
 		background: rgba(0,0,0,0) url(../pict/images/index/work-hower-pict.png) 50% 50% no-repeat;
 		background-size: 0;
 
-		transition: all 0.3s;
+		transition: all 0.5s;
 		&:hover {
 			background: rgba(0,0,0,0.7) url(../pict/images/index/work-hower-pict.png) 50% 50% no-repeat;
 			background-size: auto;
