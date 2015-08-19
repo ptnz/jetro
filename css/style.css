@@ -2,6 +2,8 @@
 @import "../lib/fonts/bebasneue/bebasneue.css";
 @import "../lib/fonts/myriadpro/myriadpro.css";
 /* Variables */
+/* Colors */
+/* Fonts */
 /* Elements */
 p {
   font-family: "MyriadPro-Regular";
@@ -303,21 +305,6 @@ aside.aside {
 .aside-element {
   margin-bottom: 10px;
 }
-.aside-element__title {
-  color: #e8663c;
-  font-family: "bebas_neuebold";
-  font-size: 24px;
-  text-align: left;
-  background: url(../pict/images/index/title-strip.png) 0 0 no-repeat;
-  background-size: initial;
-  text-transform: uppercase;
-  padding-bottom: 15px;
-}
-.aside-element__title span {
-  background: url(../pict/images/index/bgnd.png) 0 0 repeat;
-  background-size: cover;
-  padding-right: 25px;
-}
 .aside-element__content ul {
   list-style-type: none;
   padding-left: 0;
@@ -406,7 +393,7 @@ body {
   margin-top: 30px;
 }
 .feature-item {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .feature-item__title {
   color: #e8663c;
@@ -448,25 +435,27 @@ body {
   font-family: "MyriadPro-Regular";
   font-size: 16px;
 }
-/* Recent works */
-.work-list {
-  margin-top: 40px;
-}
-.work-list__title {
+/* Title making */
+.work-list__title,
+.aside-element__title,
+.portfolio__title {
   color: #e8663c;
   font-family: "bebas_neuebold";
   font-size: 28px;
   text-align: left;
-  background: url(../pict/images/index/title-strip.png) 0 0 no-repeat;
-  background-size: contain;
+  background: url(../pict/images/index/title-strip.png) 0 4px repeat-x;
+  background-size: initial;
   text-transform: uppercase;
   padding-bottom: 15px;
 }
-.work-list__title span {
+.work-list__title span,
+.aside-element__title span,
+.portfolio__title span {
   background: url(../pict/images/index/bgnd.png) 0 0 repeat;
   background-size: cover;
   padding-right: 25px;
 }
+/* Recent works */
 .work {
   margin-bottom: 35px;
 }
@@ -520,6 +509,14 @@ body {
   font-size: 16px;
   line-height: 16px;
   margin-bottom: 0;
+}
+/* Portfolio */
+.portfolio {
+  margin-bottom: 40px;
+}
+.portfolio__img {
+  width: 100%;
+  margin-bottom: 40px;
 }
 
 /*# sourceMappingURL=style.css.map */

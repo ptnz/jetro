@@ -3,13 +3,15 @@ body {
 }
 
 
+
 /* Features */
 .features {
 	margin-top: 30px;
 }
 
 .feature-item {
-	margin-bottom: 20px;
+	margin-bottom: 40px;
+
 	&__title {
 		color: @base-color-darken;
 		font-family: @font-base-bold;
@@ -53,7 +55,6 @@ body {
 				background: url(../pict/images/index/user-icon.png) 0 0 no-repeat;
 			}
 		}
-
 	}
 
 	&__text {
@@ -63,17 +64,18 @@ body {
 	}
 }
 
-/* Recent works */
-.work-list {
-	margin-top: 40px;
+
+
+/* Title making */
+.work-list, .aside-element, .portfolio {
 
 	&__title {
 		color: @base-color-darken;
 		font-family: @font-base-bold;
 		font-size: @title-on-slide;
 		text-align: left;
-		background: url(../pict/images/index/title-strip.png) 0 0 no-repeat;
-		background-size: contain;
+		background: url(../pict/images/index/title-strip.png) 0 4px repeat-x;
+		background-size: initial;
 		text-transform: uppercase;
 		padding-bottom: 15px;
 
@@ -85,8 +87,10 @@ body {
 	}
 }
 
-.work {
 
+
+/* Recent works */
+.work {
 	margin-bottom: 35px;
 
 	&__img-inner {
@@ -132,7 +136,6 @@ body {
 		border: 1px solid @gray-base;
 		border-top: none;
 
-
 	}
 	&__title {
 		color: @gray-base;
@@ -147,5 +150,21 @@ body {
 		font-size: @text-on-slide;
 		line-height: @text-on-slide;
 		margin-bottom: 0;
+	}
+}
+
+
+
+/* Portfolio */
+.portfolio {
+	margin-bottom: 40px;
+
+	&__img {
+		width: 100%;
+		margin-bottom: 40px;
+	}
+
+	&__text {
+
 	}
 }
