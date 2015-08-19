@@ -333,14 +333,31 @@ aside.aside {
 }
 .thumb-img-container {
   overflow: hidden;
-  max-height: 60px;
   margin-bottom: 15px;
-  position: relative;
 }
-.thum-img {
+.thumb-img-container .thumb-img {
   border: 1px solid rgba(235, 84, 57, 0.8);
-  background-color: rgba(235, 84, 57, 0.2);
+  background: url(../pict/images/index/work-1.png) 0 0 no-repeat;
   min-width: 100%;
+  width: 100vw;
+  height: 100vw;
+  background-size: cover;
+  position: relative;
+  background-color: rgba(235, 84, 57, 0.2);
+  -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+}
+.thumb-img-container .thumb-img:hover {
+  border: 1px solid green;
+  background-color: rgba(0, 0, 0, 0);
+}
+.thumb-img-container .thumb-img a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 /* Pages */
 body {
