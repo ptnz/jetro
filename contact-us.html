@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>About us</title>
+	<title>Contact us</title>
 
 	<!-- Bootstrap styles -->
 	<link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css"/>
@@ -43,12 +43,12 @@
 </header>
 
 
-<div class="content content--contact-us">
+<div class="content content--contacts">
 	<div class="container">
 		<div class="row">
-			<section class="col-lg-9 col-md-9 col-sm-12 col-xs-12 contacts">
 
-
+			<section class="col-lg-9 col-md-9 col-sm-12 col-xs-12 map">
+				<div id="map" style="height: 400px"></div>
 			</section>
 
 
@@ -145,13 +145,37 @@
 								</div>
 
 
-
-
 							</div>
 						</div>
 					</div>
 				</div>
 			</aside>
+
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 contacts">
+				<p>Lorem ipsum dolor sit amet, in consectetur adipiscing elit. Siri Integer nec odio. Praesent libero. Sed
+					cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum.</p>
+
+				<p><span class="contacts__title">Best PSD Freebies</span><br/>
+					Saskatoon, SK <br/>
+					S7R 2V9 <br/>
+					328 Ave C</p>
+
+				<p>t: (888) 842 - 8356 <br/>
+				f: (888) 452 - 9257 <br/>
+				e: <a href="mailto:info@psdfreebies.com">info@psdfreebies.com</a></p>
+			</div>
+
+
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 form-feedback">
+				<form action="">
+					<input type="text" id="firstname" name="firstname" placeholder="FIRSTNAME"/><br/>
+					<input type="text" id="lastname" name="lastname" placeholder="LASTNAME"/><br/>
+					<input type="email" id="email-address" name="email-address" placeholder="EMAIL ADDRESS"/><br/>
+					<textarea name="contacts-message" id="contacts-message" cols="30" rows="10">Message</textarea><br/>
+					<input class="btn btn--red" type="submit" id="send-messsage" name="send message" value="Submit"/>
+				</form>
+			</div>
+
 		</div>
 	</div>
 </div>
@@ -231,6 +255,10 @@
 <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
 <!-- Fotorama -->
 <script src="lib/fotorama/fotorama.js"></script>
+
+<!-- Yandex map -->
+<script type="text/javascript" charset="utf-8"
+        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=BR_PNPyRHuanK_Ib7oAjew_VYpml_2Yn&id=map"></script>
 
 <script>
 	$(document).ready(function () {
