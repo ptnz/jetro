@@ -1,0 +1,56 @@
+aside.aside {
+	margin: 20px 0 30px 0;
+}
+
+.aside-element {
+
+	&__title {
+		color: @base-color-darken;
+		font-family: @font-base-bold;
+		font-size: @font-size-menu;
+		text-align: left;
+		background: url(../pict/images/index/title-strip.png) 0 0 no-repeat;
+		background-size: initial;
+		text-transform: uppercase;
+		padding-bottom: 15px;
+
+		span {
+			background: url(../pict/images/index/bgnd.png) 0 0 repeat;
+			background-size: cover;
+			padding-right: 25px;
+		}
+	}
+
+	&__content {
+
+		ul {
+			list-style-type: none;
+			padding-left: 0;
+		}
+
+		a {
+			font-family: @font-additional-regular;
+			font-size: @text-on-slide;
+			text-decoration: none;
+			color: @gray-darken;
+			transition: all 0.3s;
+			&:hover, &:focus, &:active {
+				color: @gray-base;
+			}
+		}
+
+	}
+}
+
+
+.thumb-img-container {
+	overflow: hidden;
+	max-height: 60px;
+	margin-bottom: 15px;
+	position: relative;
+}
+.thum-img {
+		border: 1px solid @error-color-dark;
+		background-color: @error-color;
+	min-width: 100%;
+}
