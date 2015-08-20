@@ -178,11 +178,10 @@ body {
 /* Contact-us */
 .contact-wrapper {
 	margin-bottom: 40px;
-	padding-right: 4%;/*TODO temp?*/
+	padding-right: 4%;
 }
 
 .map {
-
 	margin-bottom: 40px;
 }
 
@@ -191,6 +190,16 @@ body {
 
 	&__title {
 		color: @base-color-darken;
+	}
+
+	a {
+		color: @gray-darken;
+		text-decoration: underline;
+		transition: all 0.3s;
+
+		&:hover, &:active, &:focus {
+			color: @gray-base;
+		}
 	}
 }
 
@@ -206,6 +215,11 @@ body {
 		font-size: @font-size-btn;
 		width: 50%;
 		outline: none;
+		position: relative;
+	}
+
+	input[required] {
+
 	}
 
 	textarea {

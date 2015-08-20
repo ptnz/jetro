@@ -525,13 +525,23 @@ body {
 .contact-wrapper {
   margin-bottom: 40px;
   padding-right: 4%;
-  /*TODO temp?*/
 }
 .map {
   margin-bottom: 40px;
 }
 .contacts__title {
   color: #e8663c;
+}
+.contacts a {
+  color: #414141;
+  text-decoration: underline;
+  -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+}
+.contacts a:hover,
+.contacts a:active,
+.contacts a:focus {
+  color: #b9b9b9;
 }
 .form-feedback input[type="text"],
 .form-feedback input[type="email"],
@@ -545,6 +555,7 @@ body {
   font-size: 20px;
   width: 50%;
   outline: none;
+  position: relative;
 }
 .form-feedback textarea {
   width: 100%;
