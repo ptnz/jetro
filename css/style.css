@@ -138,6 +138,11 @@ p {
 .slider {
   margin-top: -85px;
 }
+.slider--blog {
+  margin-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
 .fotorama__caption__wrap {
   z-index: 100;
   color: #fff;
@@ -185,6 +190,9 @@ p {
 .fotorama__nav__frame.fotorama__nav__frame--thumb {
   padding-top: 0 !important;
 }
+.fotorama__nav-wrap {
+  margin-top: 1px;
+}
 /* Blocks of pages */
 .header {
   width: 100%;
@@ -215,6 +223,7 @@ p {
   display: inline-block;
   margin-right: 30px;
   text-align: right;
+  position: relative;
 }
 .menu li:last-of-type {
   margin-right: 0;
@@ -240,6 +249,78 @@ p {
 .menu a:hover span,
 .menu a:focus span,
 .menu a:active span {
+  color: #f3af9d;
+}
+.submenu {
+  position: absolute;
+  top: 60px;
+  left: -20px;
+  width: auto;
+  min-width: 135px;
+  padding: 15px 20px 6px;
+  z-index: 100;
+  background: url(../pict/images/index/bgnd.png) 0 0 no-repeat;
+  visibility: hidden;
+  opacity: 0;
+  border: 1px solid #e8663c;
+  -webkit-transition: all 0.5s;
+          transition: all 0.5s;
+}
+.submenu li {
+  display: block !important;
+  line-height: 20px;
+  margin-right: 0;
+  text-align: left;
+  margin-bottom: 15px;
+}
+.submenu a {
+  color: #b9b9b9;
+  font-size: 20px;
+  font-family: "bebas_neue_regularregular";
+  -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+}
+.submenu a span {
+  color: #b9b9b9;
+  -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+}
+.submenu a:hover,
+.submenu a:focus,
+.submenu a:active {
+  text-decoration: none;
+  color: #e8663c;
+}
+.submenu a:hover span,
+.submenu a:focus span,
+.submenu a:active span {
+  color: #f3af9d;
+}
+.submenu-parent > span {
+  cursor: context-menu;
+  color: #b9b9b9;
+  font-size: 24px;
+  font-family: "bebas_neuebold";
+  padding-bottom: 15px;
+}
+.submenu-parent > span:hover .submenu {
+  visibility: visible;
+  opacity: 1;
+}
+.submenu-parent > span span {
+  color: #b9b9b9;
+  -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+}
+.submenu-parent > span:hover,
+.submenu-parent > span:focus,
+.submenu-parent > span:active {
+  text-decoration: none;
+  color: #e8663c;
+}
+.submenu-parent > span:hover span,
+.submenu-parent > span:focus span,
+.submenu-parent > span:active span {
   color: #f3af9d;
 }
 .header-line {
@@ -575,6 +656,191 @@ body {
 .form-feedback input::placeholder,
 .form-feedback textarea::placeholder {
   color: #f3b29d;
+}
+/* Blogs */
+.blogs-container {
+  padding-left: 0;
+  padding-right: 0;
+}
+.dividing-line {
+  height: 20px;
+  background: url(../pict/images/index/title-strip.png) 0 0 repeat-x;
+  margin: 50px 0 70px;
+}
+.blog {
+  position: relative;
+}
+.blog__icon {
+  position: absolute;
+  top: 0;
+  left: -45px;
+  width: 45px;
+  height: 45px;
+}
+.blog__icon--slider {
+  background: url(../pict/images/blog/icon-slider.png) 0 0 no-repeat;
+  background-size: contain;
+}
+.blog__icon--picture {
+  background: url(../pict/images/blog/icon-pict.png) 0 0 no-repeat;
+  background-size: contain;
+}
+.blog__icon--quote {
+  background: url(../pict/images/blog/icon-quote.png) 0 0 no-repeat;
+  background-size: contain;
+}
+.blog__icon--video {
+  background: url(../pict/images/blog/icon-video.png) 0 0 no-repeat;
+  background-size: contain;
+}
+.blog__icon--link {
+  background: url(../pict/images/blog/icon-link.png) 0 0 no-repeat;
+  background-size: contain;
+}
+.blog__graphic-content {
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 15px;
+}
+.blog__img {
+  width: 100%;
+  margin-bottom: 40px;
+}
+.blog__features p {
+  margin-bottom: 20px;
+  color: #b9b9b9;
+}
+.blog__features ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+.blog__features li {
+  display: inline-block;
+  position: relative;
+  margin-right: 10px;
+}
+.blog__features li:last-of-type a:after {
+  content: '';
+}
+.blog__features a {
+  color: #b9b9b9;
+  text-decoration: none;
+  -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+  font-size: 16px;
+}
+.blog__features a:hover,
+.blog__features a:active,
+.blog__features a:focus {
+  color: #414141;
+}
+.blog__features a:after {
+  content: '|';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 0;
+  right: -15px;
+  color: #b9b9b9;
+}
+.blog__feature-title {
+  color: #e8663c !important;
+  font-size: 20px;
+  font-family: "bebas_neuebold";
+  margin-bottom: 5px !important;
+}
+.blog__description-title {
+  color: #e8663c;
+  font-size: 30px;
+  font-family: "bebas_neuebold";
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+.blog__description-title a {
+  color: #e8663c;
+  font-size: 30px;
+  font-family: "bebas_neuebold";
+  -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+}
+.blog__description-title a:hover,
+.blog__description-title a:active,
+.blog__description-title a:focus {
+  text-decoration: none;
+  color: #d85936;
+}
+/* For quotes and links in blogs is need another styles*/
+.blog-quote {
+  position: relative;
+  padding: 0 -15px 0;
+}
+.blog-quote p {
+  color: #474747;
+  margin-bottom: 0;
+  font-style: italic;
+}
+.blog-quote:before {
+  content: '';
+  position: absolute;
+  top: 17px;
+  left: 45px;
+  width: 25px;
+  height: 25px;
+  background: url(../pict/images/blog/quote-pict.png) 0 0 no-repeat;
+}
+.blog-quote__inner {
+  background: url(../pict/images/blog/quote-bg.png) 0 0 repeat;
+  padding: 20px 20px 20px 70px;
+}
+.blog-link__title {
+  color: #e8663c;
+  font-size: 30px;
+  font-family: "bebas_neuebold";
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+.blog-link__link {
+  display: inline-block;
+  font-size: 16px;
+  color: #b9b9b9;
+  text-decoration: none;
+  margin-bottom: 15px;
+  -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+}
+.blog-link__link:hover,
+.blog-link__link:active,
+.blog-link__link:focus {
+  color: #414141;
+}
+.paginations {
+  margin: 0 0 30px 0;
+}
+.paginations li {
+  display: inline-block;
+  margin-right: 10px;
+  list-style-type: none;
+}
+.paginations li:last-of-type {
+  margin-right: 0;
+}
+.paginations a {
+  display: inline-block;
+  font-family: "bebas_neue_regularregular";
+  font-size: 16px;
+  line-height: 16px;
+  padding: 5px 10px;
+  color: #fff;
+  background-color: #f3b29d;
+  -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+}
+.paginations a:hover,
+.paginations a:focus,
+.paginations a:active {
+  background-color: #e8663c;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */

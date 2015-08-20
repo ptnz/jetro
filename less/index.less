@@ -2,9 +2,6 @@ body {
 	background: url(../pict/images/index/bgnd.png) 0 0 repeat;
 }
 
-
-
-
 /* Features */
 .features {
 	margin-top: 30px;
@@ -59,14 +56,11 @@ body {
 	}
 
 	&__text {
-		color: @gray-darken;
+		color: @gray-darkest;
 		font-family: @font-additional-regular;
 		font-size: @text-on-slide;
 	}
 }
-
-
-
 
 /* Title making */
 .work-list, .aside-element, .portfolio {
@@ -88,9 +82,6 @@ body {
 		}
 	}
 }
-
-
-
 
 /* Recent works */
 .work {
@@ -123,12 +114,12 @@ body {
 		position: absolute;
 		top: 0;
 		left: 0;
-		background: rgba(0,0,0,0) url(../pict/images/index/work-hower-pict.png) 50% 50% no-repeat;
+		background: rgba(0, 0, 0, 0) url(../pict/images/index/work-hower-pict.png) 50% 50% no-repeat;
 		background-size: 0;
 
 		transition: all 0.5s;
 		&:hover {
-			background: rgba(0,0,0,0.7) url(../pict/images/index/work-hower-pict.png) 50% 50% no-repeat;
+			background: rgba(0, 0, 0, 0.7) url(../pict/images/index/work-hower-pict.png) 50% 50% no-repeat;
 			background-size: auto;
 		}
 	}
@@ -156,9 +147,6 @@ body {
 	}
 }
 
-
-
-
 /* Portfolio */
 .portfolio {
 	margin-bottom: 40px;
@@ -173,8 +161,6 @@ body {
 	}
 }
 
-
-
 /* Contact-us */
 .contact-wrapper {
 	margin-bottom: 40px;
@@ -185,7 +171,6 @@ body {
 	margin-bottom: 40px;
 }
 
-
 .contacts {
 
 	&__title {
@@ -193,7 +178,7 @@ body {
 	}
 
 	a {
-		color: @gray-darken;
+		color: @gray-darkest;
 		text-decoration: underline;
 		transition: all 0.3s;
 
@@ -202,7 +187,6 @@ body {
 		}
 	}
 }
-
 
 .form-feedback {
 	input[type="text"], input[type="email"], textarea {
@@ -226,7 +210,238 @@ body {
 		width: 100%;
 	}
 
-	input::placeholder, textarea::placeholder{
+	input::placeholder, textarea::placeholder {
 		color: @base-color-lighten;
 	}
+}
+
+/* Blogs */
+.blogs-container {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.dividing-line {
+	height: 20px;
+	background: url(../pict/images/index/title-strip.png) 0 0 repeat-x;
+	margin: 50px 0 70px;
+}
+
+.blog {
+	position: relative;
+
+	&__icon {
+		position: absolute;
+		top: 0;
+		left: -45px;
+		width: 45px;
+		height: 45px;
+
+		&--slider {
+			background: url(../pict/images/blog/icon-slider.png) 0 0 no-repeat;
+			background-size: contain;
+		}
+
+		&--picture {
+			background: url(../pict/images/blog/icon-pict.png) 0 0 no-repeat;
+			background-size: contain;
+		}
+
+		&--quote {
+			background: url(../pict/images/blog/icon-quote.png) 0 0 no-repeat;
+			background-size: contain;
+		}
+
+		&--video {
+			background: url(../pict/images/blog/icon-video.png) 0 0 no-repeat;
+			background-size: contain;
+		}
+
+		&--link {
+			background: url(../pict/images/blog/icon-link.png) 0 0 no-repeat;
+			background-size: contain;
+		}
+	}
+
+	&__graphic-content {
+		padding-left: 0;
+		padding-right: 0;
+		margin-bottom: 15px;
+	}
+
+	&__img {
+		width: 100%;
+		margin-bottom: 40px;
+	}
+
+	&__features {
+		p {
+			margin-bottom: 20px;
+			color: @gray-base;
+		}
+
+		ul {
+			list-style-type: none;
+			padding-left: 0;
+			margin-bottom: 20px;
+		}
+
+		li {
+			display: inline-block;
+			position: relative;
+			margin-right: 10px;
+
+			&:last-of-type a:after {
+				content: '';
+			}
+		}
+
+		a {
+			color: @gray-base;
+			text-decoration: none;
+			transition: all 0.3s;
+			font-size: @text-on-slide;
+
+			&:hover, &:active, &:focus {
+				color: @gray-darkest;
+			}
+
+			&:after {
+				content: '|';
+				position: absolute;
+				width: 10px;
+				height: 10px;
+				top: 0;
+				right: -15px;
+				color: @gray-base;
+			}
+		}
+	}
+
+	&__feature-title {
+		color: @base-color-darken !important;
+		font-size: @font-size-btn;
+		font-family: @font-base-bold;
+		margin-bottom: 5px !important;
+	}
+
+	&__description {
+
+	}
+
+	&__description-title {
+		color: @base-color-darken;
+		font-size: @h1-title;
+		font-family: @font-base-bold;
+		margin-bottom: 20px;
+		margin-top: 0;
+
+		a {
+			color: @base-color-darken;
+			font-size: @h1-title;
+			font-family: @font-base-bold;
+			transition: all 0.3s;
+
+			&:hover, &:active, &:focus {
+				text-decoration: none;
+				color: @base-color-darkest;
+			}
+		}
+	}
+
+	&__description-text {
+
+	}
+}
+
+/* For quotes and links in blogs is need another styles*/
+.blog-quote {
+	position: relative;
+	padding: 0 -15px 0;
+
+	p {
+		color: @gray-darken;
+		margin-bottom: 0;
+		font-style: italic;
+	}
+
+	&:before {
+		content: '';
+		position: absolute;
+		top: 17px;
+		left: 45px;
+		width: 25px;
+		height: 25px;
+		background: url(../pict/images/blog/quote-pict.png) 0 0 no-repeat;
+	}
+
+	&__inner {
+		background: url(../pict/images/blog/quote-bg.png) 0 0 repeat;
+		padding: 20px 20px 20px 70px;
+	}
+}
+
+.blog-link {
+
+	&__title {
+		color: @base-color-darken;
+		font-size: @h1-title;
+		font-family: @font-base-bold;
+		margin-bottom: 5px;
+		margin-top: 0;
+	}
+
+	&__link {
+		display: inline-block;
+		font-size: @text-on-slide;
+		color: @gray-base;
+		text-decoration: none;
+		margin-bottom: 15px;
+
+		transition: all 0.3s;
+
+		&:hover, &:active, &:focus {
+			color: @gray-darkest;
+		}
+	}
+}
+
+.paginations {
+
+	margin: 0 0 30px 0;
+
+	&__list {
+
+	}
+
+	li {
+		display: inline-block;
+		margin-right: 10px;
+		list-style-type: none;
+
+		&:last-of-type {
+			margin-right: 0;
+		}
+	}
+
+	a {
+		display: inline-block;
+		font-family: @font-base-regular;
+		font-size: @text-on-slide;
+		line-height: @text-on-slide;
+		padding: 5px 10px;
+		color: #fff;
+		background-color: @base-color-lighten;
+		transition: all 0.3s;
+
+		&:hover, &:focus, &:active {
+			background-color: @base-color-darken;
+			text-decoration: none;
+		}
+	}
+
+	&__active a {
+		//background-color: @base-color-darken;
+	}
+
 }
