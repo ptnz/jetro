@@ -176,8 +176,14 @@ body {
 
 
 /* Contact-us */
-.map {
+.contact-wrapper {
+	margin-bottom: 40px;
 	padding-right: 4%;/*TODO temp?*/
+}
+
+.map {
+
+	margin-bottom: 40px;
 }
 
 
@@ -189,13 +195,24 @@ body {
 }
 
 
-.feedback {
-	input, textarea {
+.form-feedback {
+	input[type="text"], input[type="email"], textarea {
 		border: 1px solid @base-color-darken;
-		padding: 10px 15px;
-		color: @base-color-darken;
+		padding: 7px 15px;
+		margin-bottom: 10px;
+		color: @base-color-lighten;
 		text-transform: uppercase;
 		font-family: @font-base-bold;
-		font-size: @font-size-menu;
+		font-size: @font-size-btn;
+		width: 50%;
+		outline: none;
+	}
+
+	textarea {
+		width: 100%;
+	}
+
+	input::placeholder, textarea::placeholder{
+		color: @base-color-lighten;
 	}
 }
