@@ -2,6 +2,15 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<script>
+		if (navigator.userAgent.match(/Android/i)) {
+			var viewport = document.querySelector("meta[name=viewport]");
+		}
+		if(navigator.userAgent.match(/Android/i)){
+			window.scrollTo(0,1);
+		}
+	</script>
 	<title>Blog</title>
 
 	<!-- Bootstrap styles -->
