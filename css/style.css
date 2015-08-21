@@ -214,7 +214,6 @@ p {
 }
 .menu {
   height: 80px;
-  line-height: 80px;
   position: relative;
 }
 .menu ul {
@@ -225,6 +224,7 @@ p {
   margin-right: 30px;
   text-align: right;
   position: relative;
+  line-height: 80px;
 }
 .menu li:last-of-type {
   margin-right: 0;
@@ -252,9 +252,37 @@ p {
 .menu a:active span {
   color: #f3af9d;
 }
+.submenu-parent {
+  cursor: context-menu;
+  color: #b9b9b9;
+  font-size: 24px;
+  font-family: "bebas_neuebold";
+  line-height: 20px !important;
+  padding-bottom: 15px;
+}
+.submenu-parent:hover .submenu {
+  visibility: visible;
+  opacity: 1;
+}
+.submenu-parent span {
+  color: #b9b9b9;
+  -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+}
+.submenu-parent:hover,
+.submenu-parent:focus,
+.submenu-parent:active {
+  text-decoration: none;
+  color: #e8663c;
+}
+.submenu-parent:hover span,
+.submenu-parent:focus span,
+.submenu-parent:active span {
+  color: #f3af9d;
+}
 .submenu {
   position: absolute;
-  top: 60px;
+  top: 30px;
   left: -20px;
   width: auto;
   min-width: 135px;
@@ -297,33 +325,6 @@ p {
 .submenu a:active span {
   color: #f3af9d;
 }
-.submenu-parent > span {
-  cursor: context-menu;
-  color: #b9b9b9;
-  font-size: 24px;
-  font-family: "bebas_neuebold";
-  padding-bottom: 15px;
-}
-.submenu-parent > span:hover .submenu {
-  visibility: visible;
-  opacity: 1;
-}
-.submenu-parent > span span {
-  color: #b9b9b9;
-  -webkit-transition: all 0.3s;
-          transition: all 0.3s;
-}
-.submenu-parent > span:hover,
-.submenu-parent > span:focus,
-.submenu-parent > span:active {
-  text-decoration: none;
-  color: #e8663c;
-}
-.submenu-parent > span:hover span,
-.submenu-parent > span:focus span,
-.submenu-parent > span:active span {
-  color: #f3af9d;
-}
 .header-line {
   height: 65px;
   background-color: #f3af9d;
@@ -357,7 +358,7 @@ p {
   display: block;
   /* visibility will be toggled with jquery */
 }
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 768px) {
   #menu-toggle-btn {
     position: absolute;
     top: 16px;
@@ -405,7 +406,7 @@ p {
     opacity: 1;
     width: auto;
     min-width: 135px;
-    padding: 5px 20px 5px;
+    padding: 15px 20px 5px;
     z-index: 100;
     background: url(../pict/images/index/bgnd.png) 0 0 no-repeat;
     line-height: 20px;
@@ -444,31 +445,32 @@ p {
   .submenu a:active span {
     color: #f3af9d;
   }
-  .submenu-parent > span {
+  .submenu-parent {
     cursor: context-menu;
     color: #b9b9b9;
     font-size: 20px;
     font-family: "bebas_neuebold";
-    padding-bottom: 15px;
+    padding-bottom: 0;
+    padding-top: 10px;
   }
-  .submenu-parent > span:hover .submenu {
+  .submenu-parent:hover .submenu {
     visibility: visible;
     opacity: 1;
   }
-  .submenu-parent > span span {
+  .submenu-parent span {
     color: #b9b9b9;
     -webkit-transition: all 0.3s;
             transition: all 0.3s;
   }
-  .submenu-parent > span:hover,
-  .submenu-parent > span:focus,
-  .submenu-parent > span:active {
+  .submenu-parent:hover,
+  .submenu-parent:focus,
+  .submenu-parent:active {
     text-decoration: none;
     color: #e8663c;
   }
-  .submenu-parent > span:hover span,
-  .submenu-parent > span:focus span,
-  .submenu-parent > span:active span {
+  .submenu-parent:hover span,
+  .submenu-parent:focus span,
+  .submenu-parent:active span {
     color: #f3af9d;
   }
 }
