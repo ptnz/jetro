@@ -347,6 +347,34 @@ p {
   line-height: 30px;
   color: #fff;
 }
+/* menu icon */
+#menu-icon {
+  display: none;
+  /* hide menu icon initially */
+}
+#nav {
+  display: block;
+  /* visibility will be toggled with jquery */
+}
+@media screen and (max-width: 600px) {
+  /* menu icon */
+  #menu-icon {
+    color: #000;
+    width: 42px;
+    height: 30px;
+    background: #ecebeb url(http://wpandyou.ru/wp-content/themes/wpandyou_v2.0/images/menu-icon.png) no-repeat 10px center;
+    padding: 8px 10px 0 42px;
+    cursor: pointer;
+    border: solid 1px #666;
+    display: block;
+    /* show menu icon */
+  }
+  /* main nav */
+  #nav {
+    display: none;
+    /* visibility will be toggled with jquery */
+  }
+}
 .footer {
   width: 100%;
   background-color: #f3b29d;
