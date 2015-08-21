@@ -2,32 +2,16 @@
 /* My JavaScript */
 /**************************************/
 
-
-window.onload = function () {
-	function sh(elem) {
-		if (elem.style.display != 'block') {
-			elem.style.display = 'block';
-		} else {
-			elem.style.display = 'none';
+$(document).ready(function () {
+//скрытие выпадающего меню при клике не по нему
+jQuery(function($){
+	$(document).mouseup(function (e){ // событие клика по веб-документу
+		var div = $("#nav"); // тут указываем ID элемента
+		if (!div.is(e.target) // если клик был не по нашему блоку
+						&& div.has(e.target).length === 0) { // и не по его дочерним элементам
+			div.hide(); // скрываем его
 		}
-	}
+	});
+});
 
-	var div = document.getElementById('div');
-
-
-	document.body.onclick = function (e) {
-		e = e || event;
-		var target = e.target || e.srcElement;
-		if (target.className == 'test') {
-			sh(div);
-		} else {
-			while (target && target != div) {
-				target = target.parentNode;
-			}
-			if (target != div) {
-				div.style.display = 'none';
-			}
-		}
-	}
-}
-
+});
