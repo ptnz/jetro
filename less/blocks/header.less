@@ -25,6 +25,7 @@
 .menu {
 	height: @header-menu-height;
 	line-height: @header-menu-height;
+	position: relative;
 
 	ul {
 		text-align: right;
@@ -109,13 +110,12 @@
 	}
 }
 
-.submenu-parent>span{
+.submenu-parent > span {
 	cursor: context-menu;
 	color: @gray-base;
 	font-size: @font-size-menu;
 	font-family: @font-base-bold;
 	padding-bottom: 15px;
-
 
 	&:hover .submenu {
 		visibility: visible;
@@ -168,42 +168,146 @@
 
 }
 
-//---
 
 
-/* menu icon */
-#menu-icon {
+/* Adaptive menu */
+
+// menu icon
+#menu-toggle-btn {
 	display: none; /* hide menu icon initially */
 }
-#nav {
 
+#nav {
 	display: block; /* visibility will be toggled with jquery */
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
 
-
-	/* menu icon */
-	#menu-icon {
-		color: #000;
-		width: 42px;
-		height: 30px;
-		background: #ecebeb url(http://wpandyou.ru/wp-content/themes/wpandyou_v2.0/images/menu-icon.png) no-repeat 10px center;
-		padding: 8px 10px 0 42px;
+	#menu-toggle-btn {
+		position: absolute;
+		top: 16px;
+		right: 16px;
+		width: 45px;
+		height: 35px;
 		cursor: pointer;
-		border: solid 1px #666;
-		display: block; /* show menu icon */
+		border: solid 1px @base-color;
+		border-radius: 7px;
+		display: inline-block; // show menu icon
+		line-height: 37px;
+		text-align: center;
+		font-size: 24px;
+		color: @base-color;
+		transition: all 0.3s;
+
+		&:hover {
+			border: solid 1px @base-color-darken;
+			color: @base-color-darken;
+		}
 	}
 
-
-	/* main nav */
+	// toggled navigation
 	#nav {
+		display: none; // visibility will be toggled with jquery
+		position: absolute;
+		top: -1px;
+		right: 85px;
+		width: auto; /*temp*/
+		background-color: #fff;
+		border: 1px solid @base-color;
+		z-index: 50;
+		padding: 15px;
+		li {
+			display: block !important;
+			line-height: 40px;
+			text-align: left;
+		}
 
-		display: none; /* visibility will be toggled with jquery */
+		a {
+			font-size: @font-size-btn;
+		}
+
+	}
+
+	//подменю
+	.submenu {
+		position: static;
+		visibility: visible;
+		opacity: 1;
+		width: auto;
+		min-width: 135px;
+		padding: 5px 20px 5px;
+		z-index: 100;
+		background: url(../pict/images/index/bgnd.png) 0 0 no-repeat;
+
+		line-height: 20px;
+		border: none;
+		transition: all 0.5s;
+
+		li {
+			display: block !important;
+			line-height: 15px !important;
+			margin-right: 0;
+			text-align: left;
+			margin-bottom: 15px;
+			list-style-type: circle;
+		}
+
+		a {
+			color: @gray-base;
+			font-size: @text-on-slide !important;
+			font-family: @font-base-bold;
+			transition: all 0.3s;
+			span {
+				color: @gray-base;
+				transition: all 0.3s;
+			}
+
+			&:hover, &:focus, &:active {
+				text-decoration: none;
+				color: @base-color-darken;
+
+				span {
+					color: @text-on-slide;
+				}
+			}
+		}
 	}
 
 
+	//пункт меню, в котором есть подпункты
+	.submenu-parent > span {
+		cursor: context-menu;
+		color: @gray-base;
+		font-size: @font-size-btn;
+		font-family: @font-base-bold;
+		padding-bottom: 15px;
+
+		&:hover .submenu {
+			visibility: visible;
+			opacity: 1;
+		}
+
+		span {
+			color: @gray-base;
+			transition: all 0.3s;
+		}
+
+		&:hover, &:focus, &:active {
+			text-decoration: none;
+			color: @base-color-darken;
+
+			span {
+				color: @base-color;
+			}
+		}
+	}
 
 }
 
 
+@media (min-width: 769px) {
+	#nav {
+		display: block !important; //для появления меню на большом разрешении, если после малого разрешения оно было спрятано по повторному нажатию
+	}
+
+}
