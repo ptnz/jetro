@@ -2,6 +2,15 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<script>
+		if (navigator.userAgent.match(/Android/i)) {
+			var viewport = document.querySelector("meta[name=viewport]");
+		}
+		if(navigator.userAgent.match(/Android/i)){
+			window.scrollTo(0,1);
+		}
+	</script>
 	<title>Work 2</title>
 
 	<!-- Bootstrap styles -->
@@ -21,17 +30,20 @@
 				<a href="index.html" title="JetRo"><span>JET</span>RO</a>
 			</div>
 
-			<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 menu">
-				<ul>
+			<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 menu" id="nav-wrap">
+
+				<div id="menu-toggle-btn" ><span class="glyphicon glyphicon-align-justify"></span></div>
+
+				<ul id="nav">
 					<li><a href="index.html">HOME</a></li>
 					<li><a href="about-us.html">ABOUT <span>US</span></a></li>
 					<li><a href="blog.html">BLOG</a></li>
-					<li class="submenu-parent"><span>PORTFOLIO
+					<li class="submenu-parent">PORTFOLIO
 						<ul class="submenu">
 							<li><a href="work-1.html" >Work 1</a></li>
 							<li><a href="work-2.html" >Work 2</a></li>
 							<li><a href="work-3.html" >Work 3</a></li>
-						</ul></span>
+						</ul>
 					</li>
 					<li><a href="contact-us.html">CONTACT <span>US</span></a></li>
 				</ul>
