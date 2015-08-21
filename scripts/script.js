@@ -2,11 +2,29 @@
 /* My JavaScript */
 /**************************************/
 
-$(document).ready(function() {
 
-    /* Custom */
+window.onload = function () {
+	function sh(elem) {
+		if (elem.style.display != 'block') {
+			elem.style.display = 'block';
+		} else {
+			elem.style.display = 'none';
+		}
+	}
 
-    //= ./common/material-init.js
-    //= ./common/google-analytics.js
 
-});
+
+	document.onclick = function (e) {
+		var div = document.getElementById('menu');
+		e = e || event;
+		var target = e.target || e.srcElement;
+		if (target.className != 'but') {
+			while (target && target != div) {
+				target = target.parentNode;
+			}
+
+			if (target != div) {
+				div.style.display = 'none';
+			}
+		}
+	}

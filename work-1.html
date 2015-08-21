@@ -238,7 +238,17 @@
 <script src="lib/fotorama/fotorama.js"></script>
 
 <script>
-	$(document).ready(function () {
+	$(document).ready(function ($) {
+
+		/* prepend menu icon */
+//		$('#nav-wrap').prepend('<div id="menu-toggle-btn" ><span class="glyphicon glyphicon-align-justify"></span></div>');
+
+		/* toggle nav */
+		$("#menu-toggle-btn").on("click", function(){
+			$("#nav").slideToggle();
+			$(this).toggleClass("active");
+		});
+
 
 	});
 </script>
