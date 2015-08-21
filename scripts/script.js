@@ -12,19 +12,22 @@ window.onload = function () {
 		}
 	}
 
+	var div = document.getElementById('div');
 
 
-	document.onclick = function (e) {
-		var div = document.getElementById('menu');
+	document.body.onclick = function (e) {
 		e = e || event;
 		var target = e.target || e.srcElement;
-		if (target.className != 'but') {
+		if (target.className == 'test') {
+			sh(div);
+		} else {
 			while (target && target != div) {
 				target = target.parentNode;
 			}
-
 			if (target != div) {
 				div.style.display = 'none';
 			}
 		}
 	}
+}
+
