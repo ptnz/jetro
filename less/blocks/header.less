@@ -181,8 +181,8 @@
 	display: block; /* visibility will be toggled with jquery */
 }
 
-@media screen and (max-width: 768px) {
-
+@media screen and (max-width: 680px) {
+	//при добавлении пунктов ширину поменять
 	#menu-toggle-btn {
 		position: absolute;
 		top: 16px;
@@ -267,7 +267,7 @@
 				color: @base-color-darken;
 
 				span {
-					color: @text-on-slide;
+					color: @base-color;
 				}
 			}
 		}
@@ -307,7 +307,7 @@
 
 @media (min-width: 769px) {
 	#nav {
-		display: block !important; //для появления меню на большом разрешении, если после малого разрешения оно было спрятано по повторному нажатию
+		display: block !important; //для появления меню на большом разрешении, если после малого разрешения оно было спрятано по повторному нажатию, то иначе не появится
 	}
 
 }

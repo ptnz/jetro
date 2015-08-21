@@ -357,7 +357,7 @@ p {
   display: block;
   /* visibility will be toggled with jquery */
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
   #menu-toggle-btn {
     position: absolute;
     top: 16px;
@@ -442,7 +442,7 @@ p {
   .submenu a:hover span,
   .submenu a:focus span,
   .submenu a:active span {
-    color: 16px;
+    color: #f3af9d;
   }
   .submenu-parent > span {
     cursor: context-menu;

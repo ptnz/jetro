@@ -21,8 +21,11 @@
 				<a href="index.html" title="JetRo"><span>JET</span>RO</a>
 			</div>
 
-			<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 menu">
-				<ul>
+			<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 menu" id="nav-wrap">
+
+				<div id="menu-toggle-btn" ><span class="glyphicon glyphicon-align-justify"></span></div>
+
+				<ul id="nav">
 					<li><a href="index.html">HOME</a></li>
 					<li><a href="about-us.html">ABOUT <span>US</span></a></li>
 					<li><a href="blog.html">BLOG</a></li>
@@ -254,6 +257,12 @@
 
 <script>
 	$(document).ready(function () {
+
+		/* toggle nav */
+		$("#menu-toggle-btn").on("click", function(){
+			$("#nav").slideToggle();
+			$(this).toggleClass("active");
+		});
 
 	});
 </script>
