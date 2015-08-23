@@ -193,6 +193,21 @@ p {
 .fotorama__nav-wrap {
   margin-top: 1px;
 }
+@media screen and (max-width: 768px) {
+  .fotorama__caption__wrap {
+    padding: 0 0 15px 5px;
+    font-size: 20px;
+    margin: 0 0 5px 5px ;
+  }
+  .fotorama__caption__wrap h2 {
+    font-size: 20px !important;
+    margin: 5px 0 5px 0 !important;
+  }
+  .fotorama__caption__wrap p {
+    margin-bottom: -10px;
+    font-size: 12px;
+  }
+}
 /* Blocks of pages */
 .header {
   width: 100%;
