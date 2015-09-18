@@ -1,302 +1,303 @@
 <!doctype html>
 <html lang="ru">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<script>
-		if (navigator.userAgent.match(/Android/i)) {
-			var viewport = document.querySelector("meta[name=viewport]");
-		}
-		if(navigator.userAgent.match(/Android/i)){
-			window.scrollTo(0,1);
-		}
-	</script>
-	<title>Jetro</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<!-- Bootstrap styles -->
-	<link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css"/>
-	<link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap-theme.css"/>
-	<!-- Fotorama -->
-	<link rel="stylesheet" href="lib/fotorama/fotorama.css"/>
+    <title>Jetro</title>
 
-	<!-- My styles -->
-	<link rel="stylesheet" href="css/style.css"/>
+    <!-- Bootstrap styles -->
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap-theme.css"/>
+    <!-- Fotorama -->
+    <link rel="stylesheet" href="lib/fotorama/fotorama.css"/>
+
+    <!-- My styles -->
+    <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
 <header class="header">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-2 col-md-2 col-sm-4 col-xs-4 logo">
-				<a href="index.html" title="JetRo"><span>JET</span>RO</a>
-			</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4 logo">
+                <a href="index.html" title="JetRo"><span>JET</span>RO</a>
+            </div>
 
 
-			<div class="col-lg-10 col-md-10 col-sm-8 col-xs-8 menu" id="nav-wrap">
+            <div class="col-lg-10 col-md-10 col-sm-8 col-xs-8 menu" id="nav-wrap">
 
-				<div id="menu-toggle-btn" ><span class="glyphicon glyphicon-align-justify"></span></div>
+                <div id="menu-toggle-btn"><span class="glyphicon glyphicon-align-justify"></span></div>
 
-				<ul id="nav">
-					<li><a href="index.html">HOME</a></li>
-					<li><a href="about-us.html">ABOUT <span>US</span></a></li>
-					<li><a href="blog.html">BLOG</a></li>
-					<li class="submenu-parent">PORTFOLIO
-						<ul class="submenu">
-							<li><a href="work-1.html" >Work 1</a></li>
-							<li><a href="work-2.html" >Work 2</a></li>
-							<li><a href="work-3.html" >Work 3</a></li>
-						</ul>
-					</li>
-					<li><a href="contact-us.html">CONTACT <span>US</span></a></li>
-				</ul>
-			</div>
+                <ul id="nav">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about-us.html">ABOUT <span>US</span></a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li class="submenu-parent">PORTFOLIO
+                        <ul class="submenu">
+                            <li><a href="work-1.html">Work 1</a></li>
+                            <li><a href="work-2.html">Work 2</a></li>
+                            <li><a href="work-3.html">Work 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact-us.html">CONTACT <span>US</span></a></li>
+                </ul>
+            </div>
 
-		</div>
-	</div>
-	<div class="header-line">
-		<div class="container">
-			<div class="row">
+        </div>
+    </div>
+    <div class="header-line">
+        <div class="container">
+            <div class="row">
 
-			</div>
-		</div>
-	</div>
+            </div>
+        </div>
+    </div>
 </header>
 
 <div class="content">
 
-	<div class="container">
-		<div class="row">
+    <div class="container">
+        <div class="row">
 
-			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 slider">
-				<div class="fotorama"
-				     data-width="100%"
-				     data-loop="true"
-				     data-allowfullscreen="true"
-				     data-keyboard="true"
-				     data-autoplay="false"
-				     data-ratio="940/400"
-				     data-max-width="100%"
-				     data-transition="crossfade"
-				     data-nav="thumbs"
-				     data-arrows="true"
-				     data-click="true"
-				     data-swipe="true">
-					<img src="pict/images/index/small-slide-1.png"
-					     data-caption="<a href='#' onclick='return false;' title='go to first project'> <h2 class='h2'>My first photo</h2> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus dolor ducimus esse labore neque perspiciatis quas ut.</p> </a>">
-					<img src="pict/images/index/small-slide-2.png"
-					     data-caption="<h2 class='h2'>Another one project</h2> <p>Among them was a 36-year-old town councillor gored in Penafiel, a town near Valladolid, north of Madrid.</p> ">
-					<img src="pict/images/index/small-slide-3.png"
-					     data-caption="<h2 class='h2'>Bangkok bomb blast</h2> <p>The other deaths occurred during bull festivals in the regions of Valencia, Murcia, Toledo, Castellon and Alicante.</p>">
-					<img src="pict/images/index/small-slide-4.png"
-					     data-caption="<h2 class='h2'>Take a picture</h2> <p>Nearly 2,000 bullfights - or corridas - are still held in the country every year, but the numbers are falling. In 2010, Catalonia became the second Spanish region after the Canary Islands to ban the tradition.</p>">
-					<img src="pict/images/index/small-slide-5.png"
-					     data-caption="<h2 class='h2'>Lets do it!</h2> <p>Eddie Howe's side had the best away record in the Championship last season, winning eight and losing just five of their matches on the road with a goal difference of +30.</p>">
-					<img src="pict/images/index/small-slide-6.png"
-					     data-caption="<h2 class='h2'>New reason of action</h2> <p>Three of Philippe Coutinho's four league goals in 2015 have come from outside the penalty area</p>">
-				</div>
-			</div>
-
-
-			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 features">
-				<div class="row">
-
-					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 feature-item">
-						<h2 class="feature-item__title feature-item__title--portfolio">Check out my latest
-							portfolio items</h2>
-
-						<div class="feature-item__text">
-							<p>Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui
-								sed magna posue re ut elementum enim rutrum.</p>
-
-							<p>Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis. Aenean
-								sodales nibh non lectus tempor a interdum justo ultricies.</p>
-
-							<div class="btn-wrapper">
-								<a href="#" onclick="return false;" class="btn btn--left">More</a>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 feature-item">
-						<h2 class="feature-item__title feature-item__title--quality">Offer Top Notch Quality
-							Work & Services</h2>
-
-						<div class="feature-item__text">
-							<p>Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui
-								sed magna posue re ut elementum enim rutrum.</p>
-
-							<p>Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis. Aenean
-								sodales nibh non lectus tempor a interdum justo ultricies.</p>
-
-							<div class="btn-wrapper">
-								<a href="#" onclick="return false;" class="btn btn--left">More</a>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 feature-item">
-						<h2 class="feature-item__title feature-item__title--follow">Follow Me on Twitter,
-							Facebook & Pinterest</h2>
-
-						<div class="feature-item__text">
-							<p>Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui
-								sed magna posue re ut elementum enim rutrum.</p>
-
-							<p>Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis. Aenean
-								sodales nibh non lectus tempor a interdum justo ultricies.</p>
-
-							<div class="btn-wrapper">
-								<a href="#" onclick="return false;" class="btn btn--left">More</a>
-							</div>
-						</div>
-					</div>
-
-				</div>
-			</div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 slider">
+                <div class="fotorama"
+                     data-width="100%"
+                     data-loop="true"
+                     data-allowfullscreen="true"
+                     data-keyboard="true"
+                     data-autoplay="false"
+                     data-ratio="940/400"
+                     data-max-width="100%"
+                     data-transition="crossfade"
+                     data-nav="thumbs"
+                     data-arrows="true"
+                     data-click="true"
+                     data-swipe="true">
+                    <img src="pict/images/index/small-slide-1.png"
+                         data-caption="<a href='#' onclick='return false;' title='go to first project'> <h2 class='h2'>My first photo</h2> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus dolor ducimus esse labore neque perspiciatis quas ut.</p> </a>">
+                    <img src="pict/images/index/small-slide-2.png"
+                         data-caption="<h2 class='h2'>Another one project</h2> <p>Among them was a 36-year-old town councillor gored in Penafiel, a town near Valladolid, north of Madrid.</p> ">
+                    <img src="pict/images/index/small-slide-3.png"
+                         data-caption="<h2 class='h2'>Bangkok bomb blast</h2> <p>The other deaths occurred during bull festivals in the regions of Valencia, Murcia, Toledo, Castellon and Alicante.</p>">
+                    <img src="pict/images/index/small-slide-4.png"
+                         data-caption="<h2 class='h2'>Take a picture</h2> <p>Nearly 2,000 bullfights - or corridas - are still held in the country every year, but the numbers are falling. In 2010, Catalonia became the second Spanish region after the Canary Islands to ban the tradition.</p>">
+                    <img src="pict/images/index/small-slide-5.png"
+                         data-caption="<h2 class='h2'>Lets do it!</h2> <p>Eddie Howe's side had the best away record in the Championship last season, winning eight and losing just five of their matches on the road with a goal difference of +30.</p>">
+                    <img src="pict/images/index/small-slide-6.png"
+                         data-caption="<h2 class='h2'>New reason of action</h2> <p>Three of Philippe Coutinho's four league goals in 2015 have come from outside the penalty area</p>">
+                </div>
+            </div>
 
 
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 features">
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 feature-item">
+                        <h2 class="feature-item__title feature-item__title--portfolio">Check out my latest
+                            portfolio items</h2>
+
+                        <div class="feature-item__text">
+                            <p>Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam
+                                ullamcorper dui
+                                sed magna posue re ut elementum enim rutrum.</p>
+
+                            <p>Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis.
+                                Aenean
+                                sodales nibh non lectus tempor a interdum justo ultricies.</p>
+
+                            <div class="btn-wrapper">
+                                <a href="#" onclick="return false;" class="btn btn--left">More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 feature-item">
+                        <h2 class="feature-item__title feature-item__title--quality">Offer Top Notch Quality
+                            Work & Services</h2>
+
+                        <div class="feature-item__text">
+                            <p>Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam
+                                ullamcorper dui
+                                sed magna posue re ut elementum enim rutrum.</p>
+
+                            <p>Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis.
+                                Aenean
+                                sodales nibh non lectus tempor a interdum justo ultricies.</p>
+
+                            <div class="btn-wrapper">
+                                <a href="#" onclick="return false;" class="btn btn--left">More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 feature-item">
+                        <h2 class="feature-item__title feature-item__title--follow">Follow Me on Twitter,
+                            Facebook & Pinterest</h2>
+
+                        <div class="feature-item__text">
+                            <p>Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam
+                                ullamcorper dui
+                                sed magna posue re ut elementum enim rutrum.</p>
+
+                            <p>Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis.
+                                Aenean
+                                sodales nibh non lectus tempor a interdum justo ultricies.</p>
+
+                            <div class="btn-wrapper">
+                                <a href="#" onclick="return false;" class="btn btn--left">More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
 
 
-			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 work-list">
-				<div class="row">
-					<h2 class="work-list__title"><span>Recent Works</span></h2>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 work-list">
+                <div class="row">
+                    <h2 class="work-list__title"><span>Recent Works</span></h2>
 
 
-					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 work">
-						<div class="work__img-inner">
-							<div class="work__img">
-								<img src="pict/images/index/work-1.png" alt="work1"/><a href="#" onclick="return false;"></a>
-							</div>
-						</div>
-						<div class="work__description">
-							<p class="work__title">Character Design</p>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 work">
+                        <div class="work__img-inner">
+                            <div class="work__img">
+                                <img src="pict/images/index/work-1.png" alt="work1"/>
+                                <a class="example-image-link" href="pict/images/index/work-1.png" data-lightbox="example-1"></a>
+                            </div>
+                        </div>
+                        <div class="work__description">
+                            <p class="work__title">Character Design</p>
 
-							<p class="work__date">March 15, 2015</p>
-						</div>
-					</div>
-
-
-					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 work">
-						<div class="work__img-inner">
-							<div class="work__img">
-
-								<img src="pict/images/index/work-2.png" alt="work2"/><a href="#" onclick="return false;"></a>
-							</div>
-						</div>
-						<div class="work__description">
-							<p class="work__title">Brochure Design</p>
-
-							<p class="work__date">June 15, 2015</p>
-						</div>
-					</div>
+                            <p class="work__date">March 15, 2015</p>
+                        </div>
+                    </div>
 
 
-					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 work">
-						<div class="work__img-inner">
-							<div class="work__img">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 work">
+                        <div class="work__img-inner">
+                            <div class="work__img">
 
-								<img src="pict/images/index/work-3.png" alt="work3"/><a href="#" onclick="return false;"></a>
-							</div>
-						</div>
-						<div class="work__description">
-							<p class="work__title">Social Media Buttons</p>
+                                <img src="pict/images/index/work-2.png" alt="work2"/>
+                                <a class="example-image-link" href="pict/images/index/work-2.png" data-lightbox="example-2"></a>
+                            </div>
+                        </div>
+                        <div class="work__description">
+                            <p class="work__title">Brochure Design</p>
 
-							<p class="work__date">June 20, 2015</p>
-						</div>
-					</div>
-
-
-					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 work">
-						<div class="work__img-inner">
-							<div class="work__img">
-
-								<img src="pict/images/index/work-4.png" alt="work4"/><a href="#" onclick="return false;"></a>
-							</div>
-						</div>
-						<div class="work__description">
-							<p class="work__title">10 Amazing Web Sites</p>
-
-							<p class="work__date">July 11, 2015</p>
-						</div>
-					</div>
+                            <p class="work__date">June 15, 2015</p>
+                        </div>
+                    </div>
 
 
-				</div>
-			</div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 work">
+                        <div class="work__img-inner">
+                            <div class="work__img">
+
+                                <img src="pict/images/index/work-3.png" alt="work3"/>
+                                <a class="example-image-link" href="pict/images/index/work-3.png" data-lightbox="example-3"></a>
+                            </div>
+                        </div>
+                        <div class="work__description">
+                            <p class="work__title">Social Media Buttons</p>
+
+                            <p class="work__date">June 20, 2015</p>
+                        </div>
+                    </div>
 
 
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 work">
+                        <div class="work__img-inner">
+                            <div class="work__img">
+
+                                <img src="pict/images/index/work-4.png" alt="work4"/>
+                                <a class="example-image-link" href="pict/images/index/work-4.png" data-lightbox="example-4"></a>
+                            </div>
+                        </div>
+                        <div class="work__description">
+                            <p class="work__title">10 Amazing Web Sites</p>
+
+                            <p class="work__date">July 11, 2015</p>
+                        </div>
+                    </div>
 
 
+                </div>
+            </div>
 
-
-		</div>
-	</div>
+        </div>
+    </div>
 </div>
 
 
 <footer class="footer">
-	<div class="container">
-		<div class="row">
+    <div class="container">
+        <div class="row">
 
-			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 footer-column">
-				<div class="footer-column__title">About Jetro</div>
-				<div class="footer-column__text">
-					<p>Lorem ipsum dolor sit amet, malorum recteque reprehendunt ea vel. Urbanitas adolescens vim te, per at
-						tritani aperiri. Adhuc invenire convenire his ea. Id mei vitae denique, in eam commodo veritus
-						disputando.</p>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 footer-column">
+                <div class="footer-column__title">About Jetro</div>
+                <div class="footer-column__text">
+                    <p>Lorem ipsum dolor sit amet, malorum recteque reprehendunt ea vel. Urbanitas adolescens vim te,
+                        per at
+                        tritani aperiri. Adhuc invenire convenire his ea. Id mei vitae denique, in eam commodo veritus
+                        disputando.</p>
 
-					<p>Pro et erant delicata, eu vim essent imperdiet accommodare, dictas deseruisse ius an. Solet everti
-						definitionem id ius, sonet oporteat cu vim.</p>
-				</div>
-			</div>
+                    <p>Pro et erant delicata, eu vim essent imperdiet accommodare, dictas deseruisse ius an. Solet
+                        everti
+                        definitionem id ius, sonet oporteat cu vim.</p>
+                </div>
+            </div>
 
-			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 footer-column">
-				<div class="footer-column__title">Twitter Widget</div>
-				<div class="footer-column__text">
-					<p><a href="#" onclick="return false;">@pixelmater</a> What an awesome design with great functionality :)</p>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 footer-column">
+                <div class="footer-column__title">Twitter Widget</div>
+                <div class="footer-column__text">
+                    <p><a href="#" onclick="return false;">@pixelmater</a> What an awesome design with great
+                        functionality :)</p>
 
-					<p><a href="#" onclick="return false;">about 1 hour ago</a></p>
+                    <p><a href="#" onclick="return false;">about 1 hour ago</a></p>
 
-					<p><a href="#" onclick="return false;">@designdude</a> What an awesome design with great functionality :)</p>
+                    <p><a href="#" onclick="return false;">@designdude</a> What an awesome design with great
+                        functionality :)</p>
 
-					<p><a href="#" onclick="return false;">about 2 hour ago</a></p>
+                    <p><a href="#" onclick="return false;">about 2 hour ago</a></p>
 
-					<p>Follow <a href="#" onclick="return false;">@bestpsdfreebies</a></p>
+                    <p>Follow <a href="#" onclick="return false;">@bestpsdfreebies</a></p>
 
-				</div>
-			</div>
+                </div>
+            </div>
 
-			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 footer-column">
-				<div class="footer-column__title">Contact Us</div>
-				<div class="footer-column__text">
-					<p>Lorem ipsum dolor sit amet, malorum recteque reprehendunt ea vel. Urbanitas adolescens vim te, per at
-						tritani aperiri.</p>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 footer-column">
+                <div class="footer-column__title">Contact Us</div>
+                <div class="footer-column__text">
+                    <p>Lorem ipsum dolor sit amet, malorum recteque reprehendunt ea vel. Urbanitas adolescens vim te,
+                        per at
+                        tritani aperiri.</p>
 
-					<p><a href="mailto:mmm@mmm.mm" onclick="return false;">information@jetro.com</a></p>
+                    <p><a href="mailto:mmm@mmm.mm" onclick="return false;">information@jetro.com</a></p>
 
-					<p>1.222.333.4444</p>
+                    <p>1.222.333.4444</p>
 
-					<div class="social-block clearfix">
-						<a href="#" onclick="return false;">
-							<div class="social-block__btn social-block__btn--fb"></div>
-						</a>
+                    <div class="social-block clearfix">
+                        <a href="#" onclick="return false;">
+                            <div class="social-block__btn social-block__btn--fb"></div>
+                        </a>
 
-						<a href="#" onclick="return false;">
-							<div class="social-block__btn social-block__btn--tw"></div>
-						</a>
-						<a href="#" onclick="return false;">
-							<div class="social-block__btn social-block__btn--mail"></div>
-						</a>
-						<a href="#" onclick="return false;">
-							<div class="social-block__btn social-block__btn--rss"></div>
-						</a>
-						<a href="#" onclick="return false;">
-							<div class="social-block__btn social-block__btn--vim"></div>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+                        <a href="#" onclick="return false;">
+                            <div class="social-block__btn social-block__btn--tw"></div>
+                        </a>
+                        <a href="#" onclick="return false;">
+                            <div class="social-block__btn social-block__btn--mail"></div>
+                        </a>
+                        <a href="#" onclick="return false;">
+                            <div class="social-block__btn social-block__btn--rss"></div>
+                        </a>
+                        <a href="#" onclick="return false;">
+                            <div class="social-block__btn social-block__btn--vim"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
 
 
@@ -306,21 +307,24 @@
 <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
 <!-- Fotorama -->
 <script src="lib/fotorama/fotorama.js"></script>
+<!-- Lightbox -->
+<script src="lib/lightbox/js/lightbox.js"></script>
+
 
 <script>
-	$(document).ready(function ($) {
+    $(document).ready(function ($) {
 
-		/* prepend menu icon */
+        /* prepend menu icon */
 //		$('#nav-wrap').prepend('<div id="menu-toggle-btn" ><span class="glyphicon glyphicon-align-justify"></span></div>');
 
-		/* toggle nav */
-		$("#menu-toggle-btn").on("click", function(){
-			$("#nav").slideToggle();
-			$(this).toggleClass("active");
-		});
+        /* toggle nav */
+        $("#menu-toggle-btn").on("click", function () {
+            $("#nav").slideToggle();
+            $(this).toggleClass("active");
+        });
 
 
-	});
+    });
 </script>
 
 <!--My script-->
