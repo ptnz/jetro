@@ -1,3 +1,4 @@
 .idea
-design/
+design/*
+!design/.gitignore
 prepros.cfg
